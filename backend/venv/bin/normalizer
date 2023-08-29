@@ -1,0 +1,8 @@
+#!/Users/Anthony_Work/All_My_Programming_Folders_Master/Udemy_Coding_Courses_Fall_2023/Chat_GPT_AI_Voice_Shaun_McDonogh/RachelChat/backend/venv/bin/python3
+# -*- coding: utf-8 -*-
+import re
+import sys
+from charset_normalizer.cli.normalizer import cli_detect
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(cli_detect())
